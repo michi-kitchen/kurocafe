@@ -72,3 +72,43 @@ greeting.addEventListener('click', () => {
   reply.textContent = 'ウホッ！';
   greetingTimer = setTimeout(() => { reply.textContent = ''; }, 2400);
 });
+
+// Animate native details while preserving keyboard and no-JavaScript operation.
+document.querySelectorAll('.faq details').forEach(details => {
+  const summary = details.querySelector('summary');
+  let animation = null;
+  let expanded = details.open;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  function settle() {
+    if (animation) {
+      animation.onfinish = null;
+      animation.cancel();
+      animation = null;
+    }
+    details.open = expanded;
+    details.style.height = '';
+    details.style.overflow = '';
+  }
+  summary.addEventListener('click', event => {
+    if (!details.animate || reducedMotion.matches) return;
+    event.preventDefault();
+    const from = details.getBoundingClientRect().height;
+    expanded = animation ? !expanded : !details.open;
+    if (animation) {
+      animation.onfinish = null;
+      animation.cancel();
+    }
+    details.open = true;
+    details.style.height = '';
+    const border = parseFloat(getComputedStyle(details).borderBottomWidth) || 0;
+    const to = expanded ? details.getBoundingClientRect().height : summary.getBoundingClientRect().height + border;
+    details.style.overflow = 'hidden';
+    animation = details.animate(
+      { height: [from + 'px', to + 'px'] },
+      { duration: 340, easing: 'cubic-bezier(.22, 1, .36, 1)' }
+    );
+    animation.onfinish = settle;
+  });
+  reducedMotion.addEventListener('change', () => { if (animation) settle(); });
+  window.addEventListener('resize', () => { if (animation) settle(); });
+});
