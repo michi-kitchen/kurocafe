@@ -77,3 +77,5 @@ assets/jungle-hero-gorilla-castella.png をFVに使用。ユーザー提供の�
 - レモンスカッシュ: https://www.instagram.com/p/DcL_Y66P9ED/ — 国産レモンの自家製熟成シロップ、注文後に作る強炭酸水。投稿本文確認済み。
 - 抹茶ラテ: https://www.instagram.com/p/Db9psP_DxP3/?img_index=1 — 京都辻利の抹茶、宇治抹茶とミルク。投稿本文・商品紹介画像確認済み。
 - カフェラテ: https://www.instagram.com/p/DPjaIhTDz_n/ — マシンとラテの写真、ユーザーの補足に基づき追加。豆の銘柄や抽出条件など未確認の情報は掲載しない。「おやつと楽しむ、本格ドリンク。」として３商品をまとめる。
+
+ラテマシンの実写真を assets/latte-machine.jpg に保存し、本格ドリンクの見出しと３商品の間に掲載。出典: https://www.instagram.com/p/DPjaIhTDz_n/ 。オーナー許可済みのInstagram素材を使用。写真の加工はせず、紙枠とテープ風の装飾をCSSで追加。
