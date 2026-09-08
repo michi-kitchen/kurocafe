@@ -70,3 +70,10 @@ OGPとTwitter Cardのタイトル・説明文・画像をHTMLのheadに指定。
 assets/jungle-hero-gorilla-castella.png をFVに使用。ユーザー提供のゴリラ型・ハート型カステラ写真を参照し、内蔵画像生成ツールで既存FVの商品部分を編集した合成イメージ。元のFVは下部の既存表示で使用するため保存。メニュー画像・OGPは今回の変更対象外。
 
 生成指示: Edit image 1 only. Replace ONLY the round baby castella cakes inside the foreground kraft paper boat with the actual style of cakes shown in image 2: detailed molded seated gorilla shaped baby castella, golden brown with lighter yellow edges, with one or two heart shaped cakes among them. Preserve the gorilla cake molded facial features, arms, chest and seated body appearance from reference image 2. Arrange these realistically in the same paper boat, similar size and pile volume as the original cakes. Image 2 is product reference only; do not include its newspaper wrapper, foliage or background. Keep ALL other elements of image 1 unchanged: exact cartoon gorilla mascot and facial expression and waving hand and head banana, smoothie cup and straw, teal jungle leaves, cream background, original portrait composition, lighting and margins. No text. Maintain original 1122x1402 aspect ratio. The result must look like the original hero with only the cake product changed.
+
+## 追加ドリンク
+
+看板２商品の後にレモンスカッシュ・抹茶ラテを掲載。価格は表示しない。価格入りの投稿画像は転載せず、紹介文と投稿へのリンクで構成。
+- レモンスカッシュ: https://www.instagram.com/p/DcL_Y66P9ED/ — 国産レモンの自家製熟成シロップ、注文後に作る強炭酸水。投稿本文確認済み。
+- 抹茶ラテ: https://www.instagram.com/p/Db9psP_DxP3/?img_index=1 — 京都辻利の抹茶、宇治抹茶とミルク。投稿本文・商品紹介画像確認済み。
+- カフェラテ: https://www.instagram.com/p/DPjaIhTDz_n/ — マシンとラテの写真、ユーザーの補足に基づき追加。豆の銘柄や抽出条件など未確認の情報は掲載しない。「おやつと楽しむ、本格ドリンク。」として３商品をまとめる。
