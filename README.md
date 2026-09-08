@@ -79,3 +79,7 @@ assets/jungle-hero-gorilla-castella.png をFVに使用。ユーザー提供の�
 - カフェラテ: https://www.instagram.com/p/DPjaIhTDz_n/ — マシンとラテの写真、ユーザーの補足に基づき追加。豆の銘柄や抽出条件など未確認の情報は掲載しない。「おやつと楽しむ、本格ドリンク。」として３商品をまとめる。
 
 ラテマシンの実写真を assets/latte-machine.jpg に保存し、本格ドリンクの見出しと３商品の間に掲載。出典: https://www.instagram.com/p/DPjaIhTDz_n/ 。オーナー許可済みのInstagram素材を使用。写真の加工はせず、紙枠とテープ風の装飾をCSSで追加。
+
+## ベビーカステラの実写真（2026-09-09）
+
+BABY CASTELLAにユーザー提供写真２点を使用。assets/castella-original.pngをメイン、assets/castella-gorilla-heart.pngを補足写真として配置。写真自体は加工せず、CSSで紙枠と傾きを追加。色や形から味を推測した説明は追加しない。仮画像の注記はスムージーのみに限定。

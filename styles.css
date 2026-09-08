@@ -1757,3 +1757,20 @@ main { overflow:clip; }
  .latte-feature-copy { padding:10px 5px 0; }
  .latte-feature-copy h4 { font-size:27px; }
 }
+
+/* Owner-supplied castella photography, presented without changing the product. */
+.castella-photos { position:relative; align-self:center; min-width:0; padding:25px 55px 105px 0; }
+.castella-main-photo { margin:0; transform:rotate(-3deg); }
+.castella-main-photo img { width:100%; height:auto; border:9px solid var(--cream); border-radius:45% 42% 12px 12px; box-shadow:5px 6px 0 #123e3320; }
+.castella-detail-photo { position:absolute; width:38%; right:0; bottom:8px; margin:0; transform:rotate(7deg); }
+.castella-detail-photo img { width:100%; height:auto; border:7px solid var(--cream); box-shadow:5px 6px 0 #123e3325; }
+.castella-photo-label { position:absolute; left:5%; bottom:42px; background:var(--yellow); border:2px solid var(--green); border-radius:30px; padding:10px 16px; font:400 15px/1.6 'Mochiy Pop One',sans-serif; transform:rotate(-6deg); }
+@media(max-width:800px) {
+ .castella-photos { width:min(100%,530px); margin:auto; padding-bottom:95px; }
+}
+@media(max-width:560px) {
+ .castella-photos { padding:20px 30px 90px 0; }
+ .castella-photo-label { left:0; bottom:30px; font-size:12px; padding:8px 12px; }
+ .castella-main-photo img { border-width:6px; }
+ .castella-detail-photo img { border-width:5px; }
+}
