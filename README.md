@@ -55,3 +55,12 @@ Create one wide 3:2 editorial food photograph for a Japanese baby castella and b
 
 車両画像プロンプト：
 Wide 3:2 playful hand-painted editorial illustration for a jungle themed Japanese sweets food truck website. A charming small retro teal and cream Japanese kei food truck in side three-quarter view, yellow striped awning open over serving window, surrounded by large lush teal banana leaves and palms. Warm ivory #fff7e6 background, dark forest green ink outlines, screenprint texture, banana yellow details. Truck on a small sandy clearing. No people, no gorilla, no logos, no text. Clearly an illustration, not a photograph or depiction of a real specific truck. Entire truck visible, premium whimsical food brand visual, generous space around truck.
+
+## 共有プレビュー（OGP）
+
+公開URL: https://kurocafenew.vercel.app/
+共有画像: assets/ogp.png（1733×907、PNG）
+OGPとTwitter Cardのタイトル・説明文・画像をHTMLのheadに指定。公開ドメイン変更時はcanonical、og:url、og:image、twitter:imageを更新する。
+
+内蔵画像生成ツールで既存FVを参照して共有画像を制作。
+プロンプト: Create a polished horizontal 1200x630 social sharing OGP banner for kurocafe based on the provided website hero reference. Preserve this gorilla mascot's appearance, banana on head, baby castella and banana smoothie. Composition: large friendly gorilla and appetizing food on the right half; left half clear warm ivory space with huge dark forest green text exactly 'kurocafe', and below bold Japanese text exactly 'ベビーカステラと' then 'ばななスムージー'. Small bottom line 'ぶりゴリちゃんと、おやつの時間。'. Teal jungle leaves framing the corners, banana yellow underline accent. Warm cream background, textured playful editorial illustration matching reference. All text and faces safely inset from edges. No sticker sheets, no UI buttons, no additional text. This is a website share card, wide landscape ratio 1.91:1.
