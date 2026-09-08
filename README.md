@@ -35,3 +35,23 @@ FV: 内蔵画像生成ツールで制作した仮素材。バナナを頭に乗�
 ## 共通ルール
 
 正本は、隣接フォルダ `../KitchenCarHPノウハウ/KITCHEN_CAR_WEBSITE_GUIDE.md` にあります。ここにはkurocafe固有の制作内容だけを保存します。
+
+## ジャングル全体デザイン（2026-09-08）
+
+- 見出しはMochiy Pop One。使用文字をGoogle Fontsのtext指定で絞ったローカル配信版（約86KB）。ライセンスは assets/OFL-MochiyPopOne.txt。新しい見出しに未収録文字を追加した場合はフォントを更新する。
+- assets/menu-sample.png は生成した仮の商品写真。メニュー内で切り取り位置を変えて表示。正式写真が届いたら各商品の img とCSSのトリミングを差し替える。
+- assets/truck-sample.png は生成した架空の車両イラスト。実車の色や仕様を示すものではない。
+- assets/jungle-leaf.svg と assets/banana.svg は装飾用ベクター。
+- バナナ・ステッカーは一度だけ動く。動きを減らす設定ではアニメーションを停止。
+- 下部のぶりゴリちゃんを押すとあいさつ。既存のFV仮画像を使用。
+- メニュー、FAQ、相談文コピー（コピー不可時の手動選択）、320〜1440pxの表示を確認。
+
+### 仮画像の制作記録
+
+内蔵画像生成ツールを使用。正式画像に差し替えるまでの仮素材。
+
+商品画像プロンプト：
+Create one wide 3:2 editorial food photograph for a Japanese baby castella and banana smoothie food truck website. Warm ivory seamless background #fff7e6. Left half: generous small kraft paper boat filled with golden round Japanese baby castella cakes, a few scattered in foreground. Right half: a clear tall takeaway cup of pale creamy banana smoothie with flat clear lid and white straw, ripe banana beside it. Entire objects visible with generous margins, appetizing detailed natural studio photography, warm sunlight soft shadows, playful premium food magazine art direction. No text, no logo, no people, no foliage. This is explicitly a temporary illustrative product image, not real shop products.
+
+車両画像プロンプト：
+Wide 3:2 playful hand-painted editorial illustration for a jungle themed Japanese sweets food truck website. A charming small retro teal and cream Japanese kei food truck in side three-quarter view, yellow striped awning open over serving window, surrounded by large lush teal banana leaves and palms. Warm ivory #fff7e6 background, dark forest green ink outlines, screenprint texture, banana yellow details. Truck on a small sandy clearing. No people, no gorilla, no logos, no text. Clearly an illustration, not a photograph or depiction of a real specific truck. Entire truck visible, premium whimsical food brand visual, generous space around truck.

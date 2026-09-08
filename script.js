@@ -51,3 +51,24 @@ copyButton.addEventListener('click', async () => {
   }
 });
 manualTemplate.addEventListener('focus', () => manualTemplate.select());
+
+// One-time accents; content remains visible without JavaScript.
+if ('IntersectionObserver' in window) {
+  const accents = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-seen');
+      accents.unobserve(entry.target);
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.banana,.mascot-card,.event-banner').forEach(item => accents.observe(item));
+}
+const greeting = document.querySelector('.gorilla-greeting');
+const reply = document.querySelector('.gorilla-reply');
+greeting.hidden = false;
+let greetingTimer;
+greeting.addEventListener('click', () => {
+  clearTimeout(greetingTimer);
+  reply.textContent = 'ウホッ！';
+  greetingTimer = setTimeout(() => { reply.textContent = ''; }, 2400);
+});
