@@ -38,7 +38,7 @@ FV: 内蔵画像生成ツールで制作した仮素材。バナナを頭に乗�
 
 ## ジャングル全体デザイン（2026-09-08）
 
-- 見出しはMochiy Pop One。使用文字をGoogle Fontsのtext指定で絞ったローカル配信版（約86KB）。ライセンスは assets/OFL-MochiyPopOne.txt。新しい見出しに未収録文字を追加した場合はフォントを更新する。
+- 見出しはMochiy Pop One。全収録文字を含むローカル配信版。ライセンスは assets/OFL-MochiyPopOne.txt。文字の一部が代替フォントになる問題を防ぐため、文字を間引かない。
 - assets/menu-sample.png は生成した仮の商品写真。メニュー内で切り取り位置を変えて表示。正式写真が届いたら各商品の img とCSSのトリミングを差し替える。
 - assets/truck-sample.png は生成した架空の車両イラスト。実車の色や仕様を示すものではない。
 - assets/jungle-leaf.svg と assets/banana.svg は装飾用ベクター。
