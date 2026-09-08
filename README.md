@@ -86,3 +86,7 @@ BABY CASTELLAにユーザー提供写真２点を使用。assets/castella-origin
 
 補足写真の白い文字を内蔵画像生成ツールで除去し、assets/castella-gorilla-heart-clean.png に差し替え（2026-09-09）。元写真は保存。
 編集指示: Remove only the white Japanese text overlay ゴリラ×ハート across the center of this photograph. Seamlessly reconstruct the small areas of cakes and background underneath the letters. Preserve the original photograph exactly everywhere else: same molded gorilla cakes, pink heart cakes, positions, shapes, colors, texture, focus, lighting, and full portrait framing. Do not add or remove cakes. No text anywhere. Output same aspect ratio as input.
+
+## キャラクターの登場頻度（2026-09-09）
+
+TOPと紹介部分に登場を集約。出店紹介の重複ロゴと、お問い合わせの大きなキャラクター・あいさつボタンを削除。本文中の名前の繰り返しも減らし、後半は商品・会場・出店相談を中心にする。

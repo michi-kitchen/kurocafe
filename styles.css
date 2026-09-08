@@ -1774,3 +1774,10 @@ main { overflow:clip; }
  .castella-main-photo img { border-width:6px; }
  .castella-detail-photo img { border-width:5px; }
 }
+
+/* Keep the mascot introduction near the top; let the closing focus on inquiries. */
+.contact-section { display:block; text-align:center; }
+.contact-inner { max-width:900px; margin:auto; padding-left:0; }
+.contact-section p:not(.kicker):not(.copy-status) { margin-left:auto; }
+.copy-button,.manual-template { margin-left:auto; margin-right:auto; }
+.event-banner { justify-content:flex-start; }

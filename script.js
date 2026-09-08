@@ -63,16 +63,6 @@ if ('IntersectionObserver' in window) {
   }, { threshold: 0.15 });
   document.querySelectorAll('.banana,.mascot-card,.event-banner').forEach(item => accents.observe(item));
 }
-const greeting = document.querySelector('.gorilla-greeting');
-const reply = document.querySelector('.gorilla-reply');
-greeting.hidden = false;
-let greetingTimer;
-greeting.addEventListener('click', () => {
-  clearTimeout(greetingTimer);
-  reply.textContent = 'ウホッ！';
-  greetingTimer = setTimeout(() => { reply.textContent = ''; }, 2400);
-});
-
 // Animate native details while preserving keyboard and no-JavaScript operation.
 document.querySelectorAll('.faq details').forEach(details => {
   const summary = details.querySelector('summary');
