@@ -83,3 +83,6 @@ assets/jungle-hero-gorilla-castella.png をFVに使用。ユーザー提供の�
 ## ベビーカステラの実写真（2026-09-09）
 
 BABY CASTELLAにユーザー提供写真２点を使用。assets/castella-original.pngをメイン、assets/castella-gorilla-heart.pngを補足写真として配置。写真自体は加工せず、CSSで紙枠と傾きを追加。色や形から味を推測した説明は追加しない。仮画像の注記はスムージーのみに限定。
+
+補足写真の白い文字を内蔵画像生成ツールで除去し、assets/castella-gorilla-heart-clean.png に差し替え（2026-09-09）。元写真は保存。
+編集指示: Remove only the white Japanese text overlay ゴリラ×ハート across the center of this photograph. Seamlessly reconstruct the small areas of cakes and background underneath the letters. Preserve the original photograph exactly everywhere else: same molded gorilla cakes, pink heart cakes, positions, shapes, colors, texture, focus, lighting, and full portrait framing. Do not add or remove cakes. No text anywhere. Output same aspect ratio as input.
