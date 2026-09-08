@@ -1,42 +1,37 @@
 # kurocafe
 
-ぶりゴリちゃんと、ベビーカステラ・ばななスムージーのキッチンカーサイト。
+ベビーカステラ・ばななスムージーと「ぶりゴリちゃん」の静的HTMLサイトです。
 
-## フォルダ
+## ファイル
 
-- `website/` : Next.jsアプリケーション
-- `PROJECT_BRIEF.md` : kurocafeの制作方針
-- `KITCHEN_CAR_WEBSITE_GUIDE.md` : 共通ルールの引き継ぎ用コピー
+- `index.html` — ページの構成と文章
+- `styles.css` — 配色・レイアウト・スマートフォン対応
+- `script.js` — スマホメニューと相談テンプレートのコピー
+- `assets/` — 画像素材
+- `favicon.svg` — 既存ロゴを使ったアイコン
 
-共通ルールの正本は、ローカルの隣接フォルダ `../KitchenCarHPノウハウ/` で管理します。
+`index.html` をブラウザで開けば表示できます。パッケージのインストール・ビルド・フレームワークは不要です。
 
-## ローカル開発
+## 配信する場合
 
-```powershell
-cd website
-npm ci
-npm run dev
-```
+リポジトリ直下がサイトのルートです。Vercelでは Framework Preset を Other、Root Directory をリポジトリ直下にし、ビルド・インストールのコマンドは空欄にします。設定とデプロイはユーザーが行います。
 
-## Vercel
+## 制作中の内容
 
-GitHubリポジトリ `michi-kitchen/kurocafe` をインポートします。
+- 世界観とメニューを優先し、出店予定は後半に配置。
+- オーナーの想いは、ヒアリング後に差し替えるダミー原稿。
+- 商品画像と大きなぶりゴリちゃんは承認済みの方向性に基づく生成イメージ。正式素材に差し替え予定。
+- 価格・サイズ・原材料・アレルギー情報、車両写真、実績、具体的な出店条件は確認後に追加。
+- 問い合わせはInstagramへのリンク。フォーム送信や自動メッセージ送信は行いません。
+- 現在はnoindexを指定。アクセス制限ではありません。
 
-- Framework Preset: **Next.js**
-- Root Directory: **website**
-- Node.js: **22.x**
-- Install Command: **npm ci**
-- Build Command: **npm run build**
-- Output Directory: **既定値（.next）**
-- Production Branch: **main**
-- 環境変数: 不要
+## 素材の出典
 
-Git連携後はmainへのPushから再デプロイできます。クライアントにはVercelのデプロイ画面で取得したURLを共有してください。
+丸型ロゴ: https://www.instagram.com/kurocafe96/p/DW29frXjzuY/
+オーナーの許可済み投稿画像をそのまま保存し、CSSでロゴの範囲を表示しています。
 
-## クライアント確認用の初版
+FV: 内蔵画像生成ツールで制作した仮素材。バナナを頭に乗せたゴリラ、ベビーカステラ、ばななスムージー、青緑のジャングルの葉を組み合わせています。
 
-オーナーの想いはヒアリング前のダミー原稿、商品と大きなキャラクターは仮ビジュアルです。既存の丸型ロゴは使用許可済みのInstagram投稿画像を使用しています。価格・原材料・アレルギー情報・車両写真・実績などは確認後に追加します。
+## 共通ルール
 
-検索登録を防ぐため、現時点ではnoindexを指定しています。これはアクセス制限ではありません。公開用原稿・素材を確定する際に見直してください。
-
-詳細は [website/README.md](website/README.md) を参照。
+正本は、隣接フォルダ `../KitchenCarHPノウハウ/KITCHEN_CAR_WEBSITE_GUIDE.md` にあります。ここにはkurocafe固有の制作内容だけを保存します。

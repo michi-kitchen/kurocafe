@@ -1,36 +1,5 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
-@import 'shadcn/tailwind.css';
-@custom-variant dark (&:is(.dark *));
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-  --color-border: var(--border);
-  --color-ring: var(--ring);
-  --color-muted-foreground: var(--muted-foreground);
-  --radius-lg: 1rem;
-}
-:root,
-.dark {
-  --background: #fff7e6;
-  --foreground: #123e33;
-  --card: #fffaf0;
-  --card-foreground: #123e33;
-  --popover: #fff7e6;
-  --popover-foreground: #123e33;
-  --primary: #123e33;
-  --primary-foreground: #fff7e6;
-  --secondary: #669e97;
-  --secondary-foreground: #123e33;
-  --muted: #efe8d6;
-  --muted-foreground: #5a6960;
-  --accent: #f7ce3b;
-  --accent-foreground: #123e33;
+:root {
   --border: #123e332e;
-  --input: #123e3340;
-  --ring: #c98e00;
-  --radius: 1rem;
   --cream: #fff7e6;
   --green: #123e33;
   --teal: #669e97;
@@ -551,7 +520,7 @@ h3 {
 }
 .product-visual {
   height: 310px;
-  background-image: url('/assets/jungle-hero.png');
+  background-image: url('assets/jungle-hero.png');
   background-repeat: no-repeat;
   border-bottom: 1px solid var(--border);
 }
@@ -714,10 +683,10 @@ h3 {
   font-size: 25px;
   margin-bottom: 25px;
 }
-.faq [data-slot='accordion-item'] {
+.faq details {
   border-bottom: 1px solid #123e3340;
 }
-.faq [data-slot='accordion-trigger'] {
+.faq summary {
   padding: 24px 4px;
   font-family: inherit;
   font-size: 16px;
@@ -726,7 +695,7 @@ h3 {
   align-items: center;
   gap: 20px;
 }
-.faq [data-slot='accordion-trigger'] span {
+.faq summary span {
   display: flex;
   align-items: baseline;
   gap: 20px;
@@ -735,7 +704,7 @@ h3 {
   font-family: Georgia, serif;
   font-size: 22px;
 }
-.faq [data-slot='accordion-content'] p {
+.faq details > p {
   font-size: 15px;
   line-height: 2;
   padding: 0 35px 20px 47px;
@@ -1400,14 +1369,14 @@ h3 {
   .faq > h3 {
     font-size: 22px;
   }
-  .faq [data-slot='accordion-trigger'] {
+  .faq summary {
     font-size: 14px;
     padding: 20px 0;
   }
-  .faq [data-slot='accordion-trigger'] span {
+  .faq summary span {
     gap: 12px;
   }
-  .faq [data-slot='accordion-content'] p {
+  .faq details > p {
     font-size: 14px;
     padding: 0 5px 20px 32px;
   }
@@ -1501,7 +1470,7 @@ h3 {
 .event-banner p,
 .conditions dd,
 .steps p,
-.faq [data-slot='accordion-content'] p,
+.faq details > p,
 .news-section p:not(.kicker),
 .section-heading > p:last-child:not(.kicker) {
   font-size: 1rem;
@@ -1511,7 +1480,7 @@ h3 {
 .desktop-nav,
 .conditions dt,
 .copy-button,
-.faq [data-slot='accordion-trigger'],
+.faq summary,
 .mascot-card a {
   font-size: 0.875rem;
 }
@@ -1577,3 +1546,14 @@ h3 {
     display: none;
   }
 }
+
+/* Native HTML controls: no component library required. */
+[hidden] { display: none !important; }
+svg { flex-shrink: 0; vertical-align: middle; }
+.button svg, .text-link svg, .mascot-card a svg { display: inline-block; }
+.faq summary { display:flex; cursor:pointer; list-style:none; justify-content:space-between; }
+.faq summary::-webkit-details-marker { display:none; }
+.faq summary::after { content:'+'; margin-left:16px; font-size:24px; }
+.faq details[open] summary::after { content:'−'; }
+.faq details > p { margin:0; }
+.no-script-nav { display:flex; gap:20px; justify-content:center; padding:10px; flex-wrap:wrap; }
